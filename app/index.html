@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -16,6 +15,7 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>  
 </head>
 <body>
+    <!--header section-->
     <div class="top-section">
         <div class="slider-section">
             <div class="owl-carousel owl-theme home-slider">
@@ -46,7 +46,7 @@
                     </div>
             </div>
         </div>
-
+        <!--header section-->
         <div class="header-section">
             <nav class="navbar navbar-default">
                 <div class="container">
@@ -95,6 +95,7 @@
             </nav>
         </div>
     </div>
+    <!--what we do section-->
     <div class="what-we-do-section">
         <div class="container">
             <div class="page-content">
@@ -124,6 +125,7 @@
             </div>
         </div>
     </div>
+    <!--our work section-->
         <div class="our-work">
             <div class="container">
                 <div class="page-content">
@@ -223,6 +225,7 @@
                     </div>
                 </div>
             </div>
+            <!--footer section-->
             <footer class="footer">
                 <div class="overlay"></div>
                 <div class="page-content">
@@ -249,6 +252,7 @@
                 </div>
             </footer>
             <script type="text/javascript">
+                //owl caraousal script
                 $('.owl-carousel').owlCarousel({
                     loop: true,
                     nav: true,
@@ -256,6 +260,7 @@
                     navText: ["<i class='glyphicon glyphicon-menu-left'></i>", "<i class='glyphicon glyphicon-menu-right'></i>"],
                     items: 1
                 })
+                 //owl caraousal script for animation
                 $(document).ready(function () {
                     // Declare Carousel jquery object
                     var owl = $('.owl-carousel');
@@ -302,6 +307,7 @@
                     })
 
                 });
+                //script for menu toggle
                 $(document).ready(function () {
                     $('.navbar-toggle').click(function () {
                         $('.navbar-collapse').slideToggle();
@@ -311,6 +317,7 @@
                     });
                    
                 });
+                //script for window scroll
                 $(window).scroll(function (e) {
                     if ($(window).scrollTop() > $('.slider-section').offset().top) {
                         $(".navbar-default").addClass("navbar-fixed-top");
